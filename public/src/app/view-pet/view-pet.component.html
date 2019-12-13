@@ -1,0 +1,10 @@
+<h3>Details about {{pet.name}}</h3>
+
+<h3>Pet type: <p>{{pet.type}}</p></h3>
+<h3>Description: <p>{{pet.desc}}</p></h3>
+<h3>Skills and Talents: 
+    <p *ngIf='pet.skills.s1'>{{pet.skills.s1}}</p>
+    <p *ngIf='pet.skills.s2'>{{pet.skills.s2}}</p>
+    <p *ngIf='pet.skills.s3'>{{pet.skills.s3}}</p>
+</h3>
+<button (click)='buy(pet._id)'>Purchase this exotic pet!</button>
